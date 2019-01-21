@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<config>
+    <api>
+        <resources>
+            <tracking_info translate="title" module="tracking">
+                <title>Tracking Info</title>
+                <acl>tracking/info</acl>
+                <model>tracking/info_api</model>
+                <methods>
+                    <addurl translate="title" module="tracking">
+                        <title>Add url</title>
+                        <acl>tracking/info/addurl</acl>
+                        <method>addurl</method>
+                    </addurl>
+                    <addnumber translate="title" module="tracking">
+                        <title>Add number</title>
+                        <acl>tracking/info/addnumber</acl>
+                        <method>addnumber</method>
+                    </addnumber>
+                </methods>
+            </tracking_info>
+            <tracking_order translate="title" module="tracking">
+                <title>Tracking Order</title>
+                <acl>tracking/order</acl>
+                <model>tracking/order_api</model>
+                <methods>
+                    <addstatus translate="title" module="tracking">
+                        <title>Add status</title>
+                        <acl>tracking/order/addstatus</acl>
+                    </addstatus>
+                </methods>
+            </tracking_order>
+        </resources>
+        <acl>
+            <resources>
+                <intelipost_tracking translate="title" module="tracking">
+                    <title>Intelipost Tracking</title>
+                    <sort_order>2100</sort_order>
+                    <info translate="title" module="tracking">
+                        <title>Info</title>
+                        <sort_order>0</sort_order>
+                        <addurl translate="title" module="tracking">
+                            <title>Add url</title>
+                            <sort_order>0</sort_order>
+                        </addurl>
+                        <addnumber translate="title" module="tracking">
+                            <title>Add number</title>
+                            <sort_order>1</sort_order>
+                        </addnumber>
+                    </info>
+                    <order translate="title" module="tracking">
+                        <title>Order</title>
+                        <sort_order>1</sort_order>
+                        <addstatus translate="title" module="tracking">
+                            <title>Add status</title>
+                        </addstatus>
+                    </order>
+                </intelipost_tracking>
+            </resources>
+        </acl>
+    </api>
+</config>
+
