@@ -49,7 +49,8 @@ public function _getTrackingInfo ($number)
 	////$status->setCarrier ($this->getConfigData('name'));
 	////$status->setCarrierTitle ($this->getConfigData('title'));
 
-	$url = Mage::getStoreConfig ('intelipost_tracking/info/url') . $client_id . DS . $order_increment_id;
+    $prefix = Mage::getStoreConfig('intelipost_tracking/webhook/order_prefix');
+	$url = Mage::getStoreConfig ('intelipost_tracking/info/url') . DS . $client_id . DS . $prefix . $order_increment_id;
 	try
 	{
 	    $client = new Zend_Http_Client();
