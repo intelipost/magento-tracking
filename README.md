@@ -12,7 +12,7 @@
 
 # :rocket: magento-tracking-v1
 
-Plugin de Push no Magento v1.
+Plugin de Tracking no Magento v1.
 
 ## Squad
 Conectividade
